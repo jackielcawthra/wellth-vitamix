@@ -396,15 +396,58 @@
 
     /* ── RESPONSIVE ── */
     @media (max-width: 720px) {
-      nav { padding: 1rem 1.25rem; }
-      .hero { padding: 7rem 1.25rem 4rem; }
-      .section { padding: 4.5rem 1.25rem; }
-      .steps { grid-template-columns: 1fr; }
+      nav {
+        padding: 1rem 1.25rem;
+      }
+
+      .nav-brand .brand-wellth { font-size: 1.1rem; }
+      .nav-brand .brand-vitamix { font-size: 0.82rem; }
+      .nav-cta { font-size: 0.72rem; letter-spacing: 0.06em; }
+
+      .hero {
+        padding: 6rem 1.25rem 3.5rem;
+        min-height: auto;
+      }
+
+      .hero h1 {
+        font-size: clamp(1.6rem, 7vw, 2.2rem);
+        margin-bottom: 1.25rem;
+      }
+
+      .hero p {
+        font-size: 0.95rem;
+        margin-bottom: 0;
+      }
+
+      .hero-result { font-size: 0.95rem; margin-bottom: 1.75rem; }
+
+      .eyebrow { font-size: 0.68rem; margin-bottom: 1rem; }
+
+      .section { padding: 3.5rem 1.25rem; }
+      .section h2 { font-size: 1.4rem; margin-bottom: 2rem; }
+      .section-label { font-size: 0.8rem; }
+
+      .steps { grid-template-columns: 1fr; gap: 2px; }
+      .step { padding: 1.75rem 1.25rem; }
       .step-arrow { display: none; }
-      .what-you-get { padding: 4.5rem 1.25rem; }
-      .what-you-get .section-inner { grid-template-columns: 1fr; gap: 2.5rem; }
-      .cta-section { padding: 5rem 1.25rem; }
-      footer { padding: 1.75rem 1.25rem; }
+      .step-num { font-size: 2.2rem; margin-bottom: 0.4rem; }
+
+      .what-you-get { padding: 3.5rem 1.25rem; }
+      .what-you-get .section-inner { grid-template-columns: 1fr; gap: 2rem; }
+      .what-you-get h2 { font-size: 1.4rem; }
+
+      .cta-section { padding: 3.5rem 1.25rem; }
+      .cta-section h2 { font-size: 1.4rem; }
+      .cta-section p { font-size: 0.95rem; }
+
+      footer {
+        padding: 1.5rem 1.25rem;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.75rem;
+      }
+
+      footer div { flex-wrap: wrap; }
     }
   </style>
 </head>
